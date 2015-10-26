@@ -248,7 +248,7 @@ namespace CacheCow.Server
 
                 if (task == null)
                     return base.SendAsync(request, cancellationToken)
-                        .Then(GetCachingContinuation(request));
+                        .Then(GetCachingContinuation(request), cancellationToken: cancellationToken);
                 else
                     return task;
 	        }

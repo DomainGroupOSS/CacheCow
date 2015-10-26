@@ -119,7 +119,7 @@ namespace CacheCow.Server.EntityTagStore.Redis
 
         public void Clear()
         {
-            throw new NotSupportedException("StackExchange.Redis does not supprt Clear() but you can use FLUSH through redis-cli.");
+            throw new NotSupportedException("StackExchange.Redis does not support Clear() but you can use FLUSH through redis-cli.");
         }
     }
 }
